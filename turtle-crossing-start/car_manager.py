@@ -27,3 +27,4 @@ class CarManager:
     def move(self):
         for car in self.all_cars:
             car.forward(STARTING_MOVE_DISTANCE)
+

@@ -29,11 +29,11 @@ while game_is_on:
     for car in car_manager.all_cars:
         if car.distance(player) < 20:
             game_is_on = False
-    #Detect if player make it to other side
+    # Detect if player make it to other side
     if player.ycor() == 300:
         player.reset()
         scoreboard.refresh()
-        refresh_time *= .8
+        refresh_time *= .5
 
 scoreboard.game_over()
 screen.exitonclick()
